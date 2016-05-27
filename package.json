@@ -1,0 +1,37 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "Assorted challenges to level up at life...",
+  "scripts": {
+    "start": "npm-run-all build watch:*",
+    "watch:styles": "nodemon -e scss -x \"npm run build:styles\"",
+    "prebuild": "npm-run-all lint:*",
+    "lint:styles": "echo 'lint styles'",
+    "lint:scripts": "echo 'lint scripts'",
+    "build": "npm-run-all build:*",
+    "build:styles": "node-sass --include-path scss assets/styles/main.scss dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-morrison/code-challenges.git"
+  },
+  "keywords": [
+    "javascript",
+    "angular",
+    "react",
+    "front-end"
+  ],
+  "author": "Tyler Morrison <tyler@counterpointstudio.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyler-morrison/code-challenges/issues"
+  },
+  "homepage": "http://tyler-morrison.github.io/code-challenges/",
+  "devDependencies": {
+    "eslint": "^2.10.2",
+    "eslint-plugin-react": "^5.1.1",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "npm-run-all": "^2.1.1"
+  }
+}
