@@ -9,7 +9,8 @@
     "lint:styles": "echo 'lint styles'",
     "lint:scripts": "echo 'lint scripts'",
     "build": "npm-run-all build:*",
-    "build:styles": "node-sass --include-path scss assets/styles/main.scss dist/css/main.css"
+    "build:styles": "node-sass --include-path scss assets/styles/main.scss dist/css/main.css",
+    "postbuild": "postcss --use autoprefixer -c .postcss.json -r dist/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,13 @@
   },
   "homepage": "http://tyler-morrison.github.io/code-challenges/",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "eslint": "^2.10.2",
     "eslint-plugin-react": "^5.1.1",
     "node-sass": "^3.7.0",
     "nodemon": "^1.9.2",
-    "npm-run-all": "^2.1.1"
+    "npm-run-all": "^2.1.1",
+    "postcss": "^5.0.21",
+    "postcss-cli": "^2.5.2"
   }
 }

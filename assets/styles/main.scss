@@ -1,4 +1,9 @@
-body
-{
-    background-color: red;
-}
+@import 'settings/variables';
+
+@import 'tools/clearfix';
+@import 'tools/hidetext';
+@import 'tools/vertical';
+
+@import 'generic/normalize';
+@import 'generic/box-sizing';
+@import 'generic/z-index';
