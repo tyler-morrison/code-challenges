@@ -366,7 +366,50 @@ textarea {
   /* 1 */ }
 
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit; }
+
+html {
+  font-size: 100%; }
+
+main {
+  max-width: 45em;
+  margin: 0 auto; }
+
+[rel='prev'] {
+  /* styling for "previous links" */ }
+
+[rel='next'] {
+  /* styling for "next" links */ }
+
+[href^='https:'] {
+  /* style properties exclusive to secure pages */ }
+
+[href^='http:']:not([href*='this-domain.com']) {
+  /* External page link */ }
+
+[href$='pdf'] {
+  /* Pdfs */ }
+
+[href^='mailto:'] {
+  /* Emails */ }
+
+[href*='facebook.com'] {
+  /* Facebook */ }
+
+[href*='twitter.com'] {
+  /* Twitter */ }
+
+/**
+* @desc         Base button styles.
+* @name         Button
+* @author
+* @tested
+* @requires
+*/

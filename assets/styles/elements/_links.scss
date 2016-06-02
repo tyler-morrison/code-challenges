@@ -1,0 +1,31 @@
+[rel='prev'] {
+  /* styling for "previous links" */
+}
+
+[rel='next'] {
+  /* styling for "next" links */
+}
+
+[href^='https:'] {
+  /* style properties exclusive to secure pages */
+}
+
+[href^='http:']:not([href*='this-domain.com']) {
+  /* External page link */
+}
+
+[href$='pdf'] {
+  /* Pdfs */
+}
+
+[href^='mailto:'] {
+  /* Emails */
+}
+
+[href*='facebook.com'] {
+  /* Facebook */
+}
+
+[href*='twitter.com'] {
+  /* Twitter */
+}
